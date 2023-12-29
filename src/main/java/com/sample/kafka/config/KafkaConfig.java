@@ -56,13 +56,4 @@ public class KafkaConfig {
     public NewTopic dlt() {
         return new NewTopic("${kafka.topicNameDLT}", 1, (short) 1);
     }
-
-    @Bean
-//    @Profile("default") // Don't run from test(s)
-    public ApplicationRunner runner() {
-        return args -> {
-//            System.out.println("Hit Enter to terminate...");
-            System.in.read();
-        };
-    }
 }
