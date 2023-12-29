@@ -1,13 +1,15 @@
-package com.sample.javaandkafka;
+package com.sample.kafka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.kafka.annotation.EnableKafka;
 
 @SpringBootApplication
-public class JavaAndKafkaApplication {
+@EnableKafka
+public class KafkaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JavaAndKafkaApplication.class, args);
+        SpringApplication.run(KafkaApplication.class, args);
     }
 
 }

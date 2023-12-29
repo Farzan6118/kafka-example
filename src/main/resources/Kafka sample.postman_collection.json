@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "2b583bc4-63e3-40c5-994b-8f4da3e204ec",
+		"name": "Kafka sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15814228"
+	},
+	"item": [
+		{
+			"name": "Topic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8092/api/v1/send/topic/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"api",
+						"v1",
+						"send",
+						"topic",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DLT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"hjsdfksd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8092/api/v1/send/dlt/hi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"api",
+						"v1",
+						"send",
+						"dlt",
+						"hi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
